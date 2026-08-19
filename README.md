@@ -11,9 +11,10 @@
 
 | Carnet    | Nombre                                     |
 |----------:|:------------------------------------------:|
-| 202100019 | Angela María Esther Escobar Alvarez |
-| 201902559 | Luisa Daniela Velásquez Rodas |
-| 202200133 | César Augusto Francisco Vicente |
-| 201902125 | Christian Josué Hernández Juárez |
-| 202010307 | Edwin Aman Sam Pum  |
+| 202100019 | Angela María Esther Escobar Alvarez        |
+| 201902559 | Luisa Daniela Velásquez Rodas              |
+| 202200133 | César Augusto Francisco Vicente            |
+| 201902125 | Christian Josué Hernández Juárez           |
+| 202010307 | Edwin Aman Sam Pum                         |
+| 202300396 | Marcos Geovani Barrios Lopez               |
 
