@@ -25,7 +25,8 @@ EXPECTED_COLUMNS = [
     "Vale",
 ]
 
-DATE_FORMAT = "%d.%m.%y"
+DATE_FORMAT = "%Y-%m-%d"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def required(row: dict[str, str], column: str, line_number: int) -> str:
@@ -63,7 +64,7 @@ def parse_date(row: dict[str, str], column: str, line_number: int):
         return datetime.strptime(value, DATE_FORMAT).date()
     except ValueError as exc:
         raise ValueError(
-            f"Línea {line_number}: '{column}' debe usar formato DD.MM.YY, recibido: {value!r}."
+            f"Línea {line_number}: '{column}' debe usar formato YYYY-MM-DD, recibido: {value!r}."
         ) from exc
 
 
@@ -227,11 +228,11 @@ def load_records(records: list[tuple]) -> None:
 
 
 def main() -> None:
-    load_dotenv()
+    load_dotenv(PROJECT_ROOT / ".env")
 
-    csv_path = Path(
-        os.getenv("CSV_PATH", "data/raw/Venta_online_c.csv")
-    )
+    csv_path = Path(os.getenv("CSV_PATH", "data/raw/Venta_online_c.csv"))
+    if not csv_path.is_absolute():
+        csv_path = PROJECT_ROOT / csv_path
 
     print(f"Validando CSV: {csv_path}")
     records = read_and_validate_csv(csv_path)
