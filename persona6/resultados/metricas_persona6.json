@@ -1,0 +1,201 @@
+{
+  "validacion": {
+    "archivo": "C:\\Users\\marco\\Desktop\\Carrera\\2S2026\\GEREN 2\\LAB\\AgentePractica1_G10\\Venta_online_c.csv",
+    "registros": 6500,
+    "columnas": 12,
+    "filas_con_datos_faltantes": 0,
+    "ids_unicos": true,
+    "fecha_minima": "2021-01-01",
+    "fecha_maxima": "2021-12-31",
+    "anio_validado": 2021,
+    "boletin_dominio": [
+      0,
+      1
+    ],
+    "vale_dominio": [
+      0,
+      1
+    ]
+  },
+  "resumen": {
+    "total_registros": 6500,
+    "boletines_usados": 2921,
+    "porcentaje_boletines": 44.93846153846154,
+    "vales_usados": 1254,
+    "porcentaje_vales": 19.29230769230769,
+    "usan_ambos": 811,
+    "porcentaje_ambos": 12.476923076923077,
+    "no_usan_ninguno": 3136,
+    "porcentaje_ninguno": 48.246153846153845,
+    "correlacion_phi_boletin_vale": 0.19396766859199313,
+    "probabilidad_vale_si_boletin": 0.2776446422458062,
+    "probabilidad_vale_si_no_boletin": 0.12377759150600727,
+    "lift_vale_dado_boletin": 2.2430929449158925,
+    "tabla_relacion": {
+      "no_boletin_no_vale": 3136,
+      "no_boletin_si_vale": 443,
+      "si_boletin_no_vale": 2110,
+      "si_boletin_si_vale": 811
+    }
+  },
+  "uso_mensual": [
+    {
+      "mes_num": 1,
+      "registros": 520,
+      "boletines_usados": 241,
+      "vales_usados": 100,
+      "mes": "Enero",
+      "porcentaje_boletines": 46.3461538462,
+      "porcentaje_vales": 19.2307692308
+    },
+    {
+      "mes_num": 2,
+      "registros": 545,
+      "boletines_usados": 259,
+      "vales_usados": 91,
+      "mes": "Febrero",
+      "porcentaje_boletines": 47.5229357798,
+      "porcentaje_vales": 16.6972477064
+    },
+    {
+      "mes_num": 3,
+      "registros": 569,
+      "boletines_usados": 261,
+      "vales_usados": 133,
+      "mes": "Marzo",
+      "porcentaje_boletines": 45.8699472759,
+      "porcentaje_vales": 23.374340949
+    },
+    {
+      "mes_num": 4,
+      "registros": 557,
+      "boletines_usados": 239,
+      "vales_usados": 88,
+      "mes": "Abril",
+      "porcentaje_boletines": 42.908438061,
+      "porcentaje_vales": 15.7989228007
+    },
+    {
+      "mes_num": 5,
+      "registros": 530,
+      "boletines_usados": 251,
+      "vales_usados": 97,
+      "mes": "Mayo",
+      "porcentaje_boletines": 47.358490566,
+      "porcentaje_vales": 18.3018867925
+    },
+    {
+      "mes_num": 6,
+      "registros": 543,
+      "boletines_usados": 228,
+      "vales_usados": 102,
+      "mes": "Junio",
+      "porcentaje_boletines": 41.9889502762,
+      "porcentaje_vales": 18.7845303867
+    },
+    {
+      "mes_num": 7,
+      "registros": 565,
+      "boletines_usados": 236,
+      "vales_usados": 96,
+      "mes": "Julio",
+      "porcentaje_boletines": 41.7699115044,
+      "porcentaje_vales": 16.9911504425
+    },
+    {
+      "mes_num": 8,
+      "registros": 530,
+      "boletines_usados": 251,
+      "vales_usados": 102,
+      "mes": "Agosto",
+      "porcentaje_boletines": 47.358490566,
+      "porcentaje_vales": 19.2452830189
+    },
+    {
+      "mes_num": 9,
+      "registros": 508,
+      "boletines_usados": 200,
+      "vales_usados": 120,
+      "mes": "Septiembre",
+      "porcentaje_boletines": 39.3700787402,
+      "porcentaje_vales": 23.6220472441
+    },
+    {
+      "mes_num": 10,
+      "registros": 563,
+      "boletines_usados": 260,
+      "vales_usados": 85,
+      "mes": "Octubre",
+      "porcentaje_boletines": 46.1811722913,
+      "porcentaje_vales": 15.0976909414
+    },
+    {
+      "mes_num": 11,
+      "registros": 493,
+      "boletines_usados": 233,
+      "vales_usados": 112,
+      "mes": "Noviembre",
+      "porcentaje_boletines": 47.261663286,
+      "porcentaje_vales": 22.7180527383
+    },
+    {
+      "mes_num": 12,
+      "registros": 577,
+      "boletines_usados": 262,
+      "vales_usados": 128,
+      "mes": "Diciembre",
+      "porcentaje_boletines": 45.4072790295,
+      "porcentaje_vales": 22.1837088388
+    }
+  ],
+  "patrones": [
+    {
+      "segmento": "Ninguno",
+      "registros": 3136,
+      "venta_total_total": 574926.4,
+      "venta_total_media": 183.331122449,
+      "venta_total_mediana": 121.8,
+      "compras_media": 4.5998086735,
+      "compras_mediana": 4.0,
+      "monto_compra_media": 38.2649247449,
+      "monto_compra_mediana": 34.5805,
+      "porcentaje_registros": 48.2461538462
+    },
+    {
+      "segmento": "Solo boletín",
+      "registros": 2110,
+      "venta_total_total": 493322.7,
+      "venta_total_media": 233.8022274882,
+      "venta_total_mediana": 154.6,
+      "compras_media": 5.7511848341,
+      "compras_mediana": 5.0,
+      "monto_compra_media": 38.9792630332,
+      "monto_compra_mediana": 35.1025,
+      "porcentaje_registros": 32.4615384615
+    },
+    {
+      "segmento": "Solo vale",
+      "registros": 443,
+      "venta_total_total": 75601.0,
+      "venta_total_media": 170.6568848758,
+      "venta_total_mediana": 114.0,
+      "compras_media": 4.2866817156,
+      "compras_mediana": 3.0,
+      "monto_compra_media": 43.6188939052,
+      "monto_compra_mediana": 39.756,
+      "porcentaje_registros": 6.8153846154
+    },
+    {
+      "segmento": "Ambos",
+      "registros": 811,
+      "venta_total_total": 196725.7,
+      "venta_total_media": 242.5717632552,
+      "venta_total_mediana": 173.3,
+      "compras_media": 5.7040690506,
+      "compras_mediana": 5.0,
+      "monto_compra_media": 45.681432799,
+      "monto_compra_mediana": 41.483,
+      "porcentaje_registros": 12.4769230769
+    }
+  ]
+}
