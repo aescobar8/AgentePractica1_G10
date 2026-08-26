@@ -1,0 +1,40 @@
+{
+  "validacion": {
+    "archivo": "C:\\Users\\Familia Cifuentes\\Desktop\\AgentePractica1_G10\\persona4\\sog2_postgres_local\\data\\raw\\Venta_online_c.csv",
+    "registros": 6500,
+    "columnas": 12,
+    "nulos_venta_total": 0,
+    "nulos_fecha_compra": 0,
+    "ids_unicos": true,
+    "fecha_minima": "2021-01-01",
+    "fecha_maxima": "2021-12-31"
+  },
+  "resumen": {
+    "registros": 6500,
+    "ventas_totales": 1340575.8,
+    "media": 206.24243076923077,
+    "mediana": 137.35000000000002,
+    "moda": 98.0,
+    "minimo": 9.0,
+    "maximo": 3169.0,
+    "mes_mayores_ventas": "Diciembre",
+    "mayores_ventas": 124038.7,
+    "mes_menores_ventas": "Noviembre",
+    "menores_ventas": 99385.5,
+    "variacion_max_min_porcentaje": 24.80563060003722,
+    "meses_ordenados": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ]
+  }
+}
