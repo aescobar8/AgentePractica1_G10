@@ -14,7 +14,6 @@ SERVER_ENV = Path(__file__).resolve().parent / ".env"
 
 
 def load_configuration() -> None:
-    """Carga la configuración compartida y permite sobrescribirla localmente."""
     load_dotenv(SHARED_ENV)
     load_dotenv(SERVER_ENV, override=True)
 

@@ -20,7 +20,6 @@ METODOS_PAGO = {
 
 
 def cargar_configuracion() -> None:
-    """Carga la conexión común y permite sobrescribirla con persona2/.env."""
     load_dotenv(SHARED_ENV)
     load_dotenv(PERSONA2_ENV, override=True)
 
@@ -43,7 +42,6 @@ def conectar() -> psycopg.Connection:
 
 
 def cargar_y_limpiar_datos() -> list[tuple[int, float]]:
-    """Obtiene únicamente MetodoPago y MontoCompra y valida sus dominios."""
     with conectar() as conexion:
         with conexion.cursor() as cursor:
             cursor.execute(
