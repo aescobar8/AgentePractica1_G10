@@ -43,8 +43,7 @@ def _python_type(parameter: dict[str, Any]) -> Any:
     }
     annotation = type_map.get(parameter.get("type", "string"), Any)
     enum = parameter.get("enum")
-    # Gemini solo admite valores de texto en enum dentro de sus declaraciones
-    # de funciones. Los rangos numéricos se validan en el handler.
+   
     if isinstance(enum, list) and enum and all(isinstance(value, str) for value in enum):
         annotation = Literal.__getitem__(tuple(enum))
     if not parameter.get("required", True) and "default" not in parameter:
@@ -81,7 +80,7 @@ def _create_tool_handler(tool: ToolSpec) -> Callable[..., Any]:
         )
 
     execute.__annotations__ = annotations
-    execute.__signature__ = inspect.Signature(  # type: ignore[attr-defined]
+    execute.__signature__ = inspect.Signature(
         parameters=signature_parameters,
         return_annotation=Any,
     )
@@ -98,7 +97,7 @@ for discovered_tool in DISCOVERED_TOOLS:
 
 @mcp.tool()
 def listar_herramientas_del_grupo() -> list[dict[str, str]]:
-    """Lista las herramientas registradas y el integrante responsable de cada una."""
+    
     return [
         {
             "nombre": tool.name,
