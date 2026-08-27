@@ -1,0 +1,30 @@
+PERSONA 4 - EDAD Y VENTAS
+====================================================================
+
+Estadísticas de Edad
+Media: 36.31 años
+Mediana: 36.00 años
+Moda: 18 años
+Mínima: 18 años
+Máxima: 79 años
+
+Resumen por grupos de edad
+grupo_edad  clientes  venta_total  venta_promedio  compras_totales  compras_promedio  monto_compra_promedio
+     18-24      1135     232819.6          205.13             5920              5.22                  38.69
+     25-34      1823     394221.6          216.25             9627              5.28                  40.00
+     35-44      1997     407882.8          204.25            10209              5.11                  39.44
+     45-54      1131     227456.9          201.11             5389              4.76                  41.26
+     55-64       352      66595.6          189.19             1687              4.79                  38.47
+       65+        62      11599.3          187.09              253              4.08                  45.24
+
+Grupos destacados
+mayor_venta_total: 35-44
+menor_venta_total: 65+
+mayor_venta_promedio: 25-34
+menor_venta_promedio: 65+
+mayor_compras_promedio: 25-34
+menor_compras_promedio: 65+
+
+Correlación Edad vs Venta_total
+Pearson r: -0.025232, p=0.041928
+Spearman rho: -0.029822, p=0.016199
